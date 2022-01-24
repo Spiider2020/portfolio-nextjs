@@ -10,7 +10,7 @@ export default function Header() {
 			<LogoDiv>
 				<Link href='/'>
 					<a style={{ display: 'flex', alignItems: 'center', color: 'white', marginBottom: '20px' }}>
-						<DiCssdeck size='3rem' /> <Span>Portfolio</Span>
+						<DiCssdeck style={{ fontSize: '3rem' }} /> <Span>Portfolio</Span>
 					</a>
 				</Link>
 			</LogoDiv>
@@ -33,13 +33,13 @@ export default function Header() {
 			</NavigationDiv>
 			<SocialDiv>
 				<SocialIcons href='https://github.com/Spiider2020'>
-					<AiFillGithub size='3rem' />
+					<AiFillGithub style={{ fontSize: '3rem' }} />
 				</SocialIcons>
 				<SocialIcons href='https://www.linkedin.com/'>
-					<AiFillLinkedin size='3rem' />
+					<AiFillLinkedin style={{ fontSize: '3rem' }} />
 				</SocialIcons>
 				<SocialIcons href='https://www.instagram.com/'>
-					<AiFillInstagram size='3rem' />
+					<AiFillInstagram style={{ fontSize: '3rem' }} />
 				</SocialIcons>
 			</SocialDiv>
 		</Container>
