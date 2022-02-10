@@ -5,7 +5,7 @@ export const Section = styled.section`
 	flex-direction: ${(props) => (props.row ? 'row' : 'column')};
 	padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
 	margin: 0 auto;
-	max-width: 1040;
+	max-width: 1040px;
 	box-sizing: content-box;
 	position: relative;
 	overflow: hidden;
@@ -17,7 +17,7 @@ export const Section = styled.section`
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		padding: ${(props) => (props.nopadding ? '0' : '16px 16px 0')};
+		padding: ${(props) => (props.nopadding ? '0 0 2rem 0' : '16px 16px 16px 16px')};
 		width: calc(100vw - 32px);
 		flex-direction: column;
 	}
@@ -74,7 +74,7 @@ export const SectionText = styled.p`
 	}
 `;
 
-export const SectioDivider = styled.div`
+export const SectionDivider = styled.div`
 	width: 64px;
 	height: 6px;
 	border-radius: 10px;

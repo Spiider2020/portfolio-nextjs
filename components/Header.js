@@ -1,44 +1,43 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 import { Container, LogoDiv, Span, NavigationDiv, SocialDiv, NavLink, SocialIcons } from './styled/HeaderStyles';
+import { HeaderData } from '../constants/sitedata';
 
 export default function Header() {
+	const router = useRouter();
 	return (
 		<Container>
 			<LogoDiv>
 				<Link href='/'>
 					<a style={{ display: 'flex', alignItems: 'center', color: 'white', marginBottom: '20px' }}>
-						<DiCssdeck style={{ fontSize: '3rem' }} /> <Span>Portfolio</Span>
+						<DiCssdeck style={{ fontSize: '3rem' }} /> <Span>{HeaderData.LogoText}</Span>
 					</a>
 				</Link>
 			</LogoDiv>
 			<NavigationDiv>
-				<li>
-					<Link href='#projects'>
-						<NavLink>Projects</NavLink>
-					</Link>
-				</li>
-				<li>
-					<Link href='#tech'>
-						<NavLink>Technologies</NavLink>
-					</Link>
-				</li>
-				<li>
-					<Link href='#about'>
-						<NavLink>About</NavLink>
-					</Link>
-				</li>
+				{router.pathname === '/'
+					? HeaderData.nav.map((item, index) => {
+							return (
+								<li key={`nav-${index}`}>
+									<Link href={item.link}>
+										<NavLink>{item.text}</NavLink>
+									</Link>
+								</li>
+							);
+					  })
+					: ''}
 			</NavigationDiv>
 			<SocialDiv>
-				<SocialIcons href='https://github.com/Spiider2020'>
+				<SocialIcons href={HeaderData.github}>
 					<AiFillGithub style={{ fontSize: '3rem' }} />
 				</SocialIcons>
-				<SocialIcons href='https://www.linkedin.com/'>
+				<SocialIcons href={HeaderData.linkedin}>
 					<AiFillLinkedin style={{ fontSize: '3rem' }} />
 				</SocialIcons>
-				<SocialIcons href='https://www.instagram.com/'>
+				<SocialIcons href={HeaderData.instagram}>
 					<AiFillInstagram style={{ fontSize: '3rem' }} />
 				</SocialIcons>
 			</SocialDiv>

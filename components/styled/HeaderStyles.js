@@ -37,7 +37,7 @@ export const NavigationDiv = styled.div`
 	display: flex;
 	justify-content: space-around;
 	@media ${(props) => props.theme.breakpoints.sm} {
-		grid-area: 2 / 2 / 3 / 5;
+		grid-area: 2 / 1 / 3/ 6;
 	}
 `;
 
@@ -57,10 +57,10 @@ export const NavLink = styled.a`
 	line-height: 32px;
 	color: rgba(255, 255, 255, 0.75);
 	transition: 0.4s ease;
+	cursor: pointer;
 	&:hover {
 		color: #fff;
 		opacity: 1;
-		cursor: pointer;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0.5rem;
