@@ -20,7 +20,10 @@ export default function TimeLine() {
 	const carouselRef = useRef();
 
 	const scroll = (node, left) => {
-		return node.scrollTo({ left, behavior: 'smooth' });
+		if (node !== null) {
+			return node.scrollTo({ left, behavior: 'smooth' });
+		}
+		return;
 	};
 
 	const handleClick = (e, i) => {

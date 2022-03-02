@@ -14,8 +14,12 @@ import {
 	ProjectInfoContainer,
 	ProjectDescription,
 	LinkContainer,
-	ProjectLink,
+	FeaturesContainer,
+	MainFeaturesList,
+	TechContainer,
+	TagsList,
 } from '../../components/styled/ProjectDetails';
+import { DiHtml53DEffects } from 'react-icons/di';
 
 export default function ProjectsDetails({ project }) {
 	const changeSelected = (evt) => {
@@ -41,6 +45,58 @@ export default function ProjectsDetails({ project }) {
 		}
 		return items;
 	};
+
+	const parseProjectDescription = () => {
+		let text = project.description;
+		let elements = null;
+		if (text.includes('[p]')) {
+			let textArray = text.split('[p]');
+			elements = textArray.map((item, index) => <ProjectDescription key={index}>{item}</ProjectDescription>);
+		} else {
+			elements = <ProjectDescription>{text}</ProjectDescription>;
+		}
+
+		return elements;
+	};
+
+	const getMainFeatures = () => {
+		let elements = null;
+		if (project.features.length > 0) {
+			elements = (
+				<FeaturesContainer>
+					<h3>Main features:</h3>
+					<MainFeaturesList>
+						{project.features.map((item, index) => (
+							<li key={index}>{item}</li>
+						))}
+					</MainFeaturesList>
+				</FeaturesContainer>
+			);
+		} else {
+			elements = <></>;
+		}
+		return elements;
+	};
+
+	const techUsed = () => {
+		let elements = null;
+		if (project.tags.length > 0) {
+			elements = (
+				<TechContainer>
+					<h3>Projects is built / uses : </h3>
+					<TagsList>
+						{project.tags.map((item, index) => (
+							<li key={index}>{item}</li>
+						))}
+					</TagsList>
+				</TechContainer>
+			);
+		} else {
+			elements = <></>;
+		}
+		return elements;
+	};
+
 	return (
 		<Layout>
 			<BackContainer>
@@ -57,14 +113,24 @@ export default function ProjectsDetails({ project }) {
 				</ImgGallery>
 				<ProjectInfoContainer>
 					<h1>{project.title}</h1>
-					<ProjectDescription>{project.description}</ProjectDescription>
+					{parseProjectDescription()}
+					{getMainFeatures()}
+					{techUsed()}
 					<LinkContainer>
-						<Button alt='true' onClick={() => (window.location = project.source)}>
-							Source Code
-						</Button>
-						<Button alt='true' onClick={() => (window.location = project.visit)}>
-							Demo
-						</Button>
+						{project.source !== '' ? (
+							<Button alt='true' onClick={() => (window.location = project.source)}>
+								Source Code
+							</Button>
+						) : (
+							<></>
+						)}
+						{project.visit !== '' ? (
+							<Button alt='true' onClick={() => (window.location = project.visit)}>
+								Demo
+							</Button>
+						) : (
+							<></>
+						)}
 					</LinkContainer>
 				</ProjectInfoContainer>
 			</ProjectContainer>

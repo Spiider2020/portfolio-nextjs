@@ -34,57 +34,57 @@ export default function Technologies() {
 			<List>
 				<ListItem>
 					<ListIconContainer>
-						<CgWebsite size='4rem' style={{ textAlign: 'center' }} />
+						<CgWebsite size='40px' style={{ textAlign: 'center' }} />
 					</ListIconContainer>
 					<ListContainer>
 						<ListTitle>Front-End</ListTitle>
 						<ListParagraph>
 							Experience with <br />
-							<SiHtml5 size='1.4rem' />
+							<SiHtml5 size='14px' />
 							&nbsp; HTML <br />
-							<SiCss3 size='1.4rem' />
+							<SiCss3 size='14px' />
 							&nbsp; CSS <br />
-							<SiSass size='1.4rem' />
+							<SiSass size='14px' />
 							&nbsp; Sass <br />
-							<SiJavascript size='1.4rem' />
+							<SiJavascript size='14px' />
 							&nbsp; JavaScript <br />
-							<SiReact size='1.4rem' />
+							<SiReact size='14px' />
 							&nbsp; React.js <br />
-							<SiNextdotjs size='1.4rem' />
+							<SiNextdotjs size='14px' />
 							&nbsp; Next.js <br />
 						</ListParagraph>
 					</ListContainer>
 				</ListItem>
 				<ListItem>
 					<ListIconContainer>
-						<DiDatabase size='4rem' style={{ textAlign: 'center' }} />
+						<DiDatabase size='40px' style={{ textAlign: 'center' }} />
 					</ListIconContainer>
 					<ListContainer>
 						<ListTitle>Back-End</ListTitle>
 						<ListParagraph>
 							Experience with <br />
-							<DiMysql size='1.6rem' />
+							<DiMysql size='16px' />
 							&nbsp; MySQL <br />
-							<SiMariadb size='1.5rem' />
+							<SiMariadb size='15px' />
 							&nbsp; MariaDB <br />
-							<SiPostgresql size='1.4rem' />
+							<SiPostgresql size='14px' />
 							&nbsp; PostgreSQL <br />
-							<SiStrapi size='1.4rem' />
+							<SiStrapi size='14px' />
 							&nbsp; Strapi CMS <br />
 						</ListParagraph>
 					</ListContainer>
 				</ListItem>
 				<ListItem>
 					<ListIconContainer>
-						<MdDesignServices size='4rem' style={{ textAlign: 'center' }} />
+						<MdDesignServices size='40px' style={{ textAlign: 'center' }} />
 					</ListIconContainer>
 					<ListContainer>
 						<ListTitle>UI / UX</ListTitle>
 						<ListParagraph>
 							Experience with <br />
-							<SiAdobexd size='1.4rem' />
+							<SiAdobexd size='14px' />
 							&nbsp; Adobe XD <br />
-							<SiFigma size='1.4rem' />
+							<SiFigma size='14px' />
 							&nbsp; Figma <br />
 						</ListParagraph>
 					</ListContainer>

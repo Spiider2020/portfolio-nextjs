@@ -42,8 +42,8 @@ export default function Projects() {
 							</TagList>
 						</div>
 						<UtilityList>
-							<ExternalLinks href={item.source}>Code</ExternalLinks>
-							<ExternalLinks href={item.visit}>Demo</ExternalLinks>
+							{item.source !== '' ? <ExternalLinks href={item.source}>Code</ExternalLinks> : <></>}
+							{item.visit !== '' ? <ExternalLinks href={item.visit}>Demo</ExternalLinks> : <></>}
 							<Link href={`/projects/${item.id}`}>
 								<ExternalLinks>More about</ExternalLinks>
 							</Link>

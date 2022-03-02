@@ -17,7 +17,7 @@ export default function Home() {
 			<Projects />
 			<Technologies />
 			<TimeLine />
-			<Achievements />
+			{/* <Achievements /> */}
 		</Layout>
 	);
 }

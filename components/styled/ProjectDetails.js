@@ -81,6 +81,38 @@ export const ProjectDescription = styled.p`
 	line-height: 2.5rem;
 `;
 
+export const FeaturesContainer = styled.div`
+	display: block;
+	padding: 0 2rem;
+`;
+
+export const MainFeaturesList = styled.ul`
+	padding: 1rem 3rem;
+	li {
+		list-style: square;
+	}
+`;
+
+export const TechContainer = styled.div`
+	padding: 3rem 2rem;
+	line-height: 2.5rem;
+`;
+
+export const TagsList = styled.ul`
+	padding: 2rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	li {
+		width: 100px;
+		min-width: fit-content;
+		text-align: center;
+		background-color: #6b3030;
+		padding: 3px 2px;
+		border-radius: 5px;
+	}
+`;
+
 export const LinkContainer = styled.div`
 	padding: 3rem 0 0 0;
 	display: flex;
