@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Img = styled.img`
 	width: 100%;
+	height: 225px;
 	border-radius: 10px 10px 0 0;
 	object-fit: cover;
 	overflow: hidden;
@@ -28,7 +29,7 @@ export const BlogCard = styled.div`
 	width: 400px;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
-		box-shadow: 0px 0px 10px 3px rgba(80, 78, 78, 0.5);
+		box-shadow: 0px 0px 10px 5px rgba(80, 78, 78, 0.7);
 	}
 `;
 export const TitleContent = styled.div`
@@ -65,7 +66,7 @@ export const Intro = styled.div`
 
 export const CardInfo = styled.div`
 	width: 100%;
-	padding: 0 50px;
+	padding: 0 25px;
 	color: #e4e6e7;
 	font-style: 2rem;
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -76,7 +77,7 @@ export const CardInfo = styled.div`
 export const TruncateOverflow = styled.p`
 	--lh: 2.5rem;
 	--max-lines: 3;
-	text-align: justify;
+	text-align: center;
 	line-height: var(--lh);
 	position: relative;
 	max-height: calc(var(--lh) * var(--max-lines));
@@ -126,6 +127,8 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
 	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
 	justify-content: space-around;
 	padding: 2rem;
 `;

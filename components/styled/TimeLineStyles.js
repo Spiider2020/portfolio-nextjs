@@ -44,12 +44,12 @@ export const CarouselItem = styled.div`
 	max-width: 196px;
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		max-width: 124px;
+		max-width: 164px;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		margin-left: 32px;
-		min-width: 120px;
+		min-width: 144px;
 		background: #0e131f;
 		padding: 4px;
 		align-content: start;
@@ -71,6 +71,7 @@ export const CarouselItemTitle = styled.h4`
 	display: flex;
 	/* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
 	background: linear-gradient(121.57deg, #ffffff 10%, rgba(255, 255, 255, 0.66) 30.15%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-bottom: 8px;
@@ -82,12 +83,13 @@ export const CarouselItemTitle = styled.h4`
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 24px;
 	}
 `;
 export const CarouselItemImg = styled.svg`
 	margin-left: 21px;
+	mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 	width: 100%;
 
@@ -99,19 +101,19 @@ export const CarouselItemImg = styled.svg`
 `;
 
 export const CarouselItemText = styled.p`
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 22px;
 	letter-spacing: 0.02em;
 	color: rgba(255, 255, 255, 0.75);
 	padding-right: 16px;
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 18px;
 		padding-right: 32px;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 10px;
+		font-size: 12px;
 		line-height: 16px;
 		padding-right: 0;
 	}

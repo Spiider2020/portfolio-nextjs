@@ -14,6 +14,7 @@ import {
 	SiStrapi,
 	SiAdobexd,
 	SiFigma,
+	SiDocker,
 } from 'react-icons/si';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../styles/GlobalComponents';
 import {
@@ -71,6 +72,8 @@ export default function Technologies() {
 							&nbsp; PostgreSQL <br />
 							<SiStrapi size='14px' />
 							&nbsp; Strapi CMS <br />
+							<SiDocker size='16px' />
+							&nbsp; Docker <br />
 						</ListParagraph>
 					</ListContainer>
 				</ListItem>

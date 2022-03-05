@@ -9,7 +9,7 @@ export default function Hero() {
 		<Section row nopadding>
 			<LeftSection>
 				<SectionTitle main center>
-					{HeroData.title}
+					{HeroData.name}
 				</SectionTitle>
 				<SectionText>{HeroData.text}</SectionText>
 				<Button onClick={() => (window.location = `mailto:${HeroData.email}`)}>{HeroData.btnText}</Button>

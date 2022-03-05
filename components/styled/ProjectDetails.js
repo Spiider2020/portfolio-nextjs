@@ -16,10 +16,7 @@ export const ProjectContainer = styled.section`
 
 export const ImgGallery = styled.div`
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	margin-top: 1.7em;
 `;
 
 export const ImgSelected = styled.img`
@@ -96,12 +93,14 @@ export const MainFeaturesList = styled.ul`
 export const TechContainer = styled.div`
 	padding: 3rem 2rem;
 	line-height: 2.5rem;
+	text-align: center;
 `;
 
 export const TagsList = styled.ul`
 	padding: 2rem 0;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 10px;
 	li {
 		width: 100px;

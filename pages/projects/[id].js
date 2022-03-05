@@ -118,14 +118,14 @@ export default function ProjectsDetails({ project }) {
 					{techUsed()}
 					<LinkContainer>
 						{project.source !== '' ? (
-							<Button alt='true' onClick={() => (window.location = project.source)}>
+							<Button alt='true' onClick={() => window.open(project.source)}>
 								Source Code
 							</Button>
 						) : (
 							<></>
 						)}
 						{project.visit !== '' ? (
-							<Button alt='true' onClick={() => (window.location = project.visit)}>
+							<Button alt='true' onClick={() => window.open(project.visit)}>
 								Demo
 							</Button>
 						) : (

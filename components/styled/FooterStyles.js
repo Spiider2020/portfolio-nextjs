@@ -30,8 +30,8 @@ export const LinkedItem = styled.a`
 		display: flex;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 8px;
-		line-height: 14px;
+		font-size: 14px;
+		line-height: 18px;
 		margin-bottom: 8px;
 		display: flex;
 		align-items: center;
@@ -75,16 +75,16 @@ export const Slogan = styled.p`
 	color: rgba(255, 255, 255, 0.5);
 	min-width: 280px;
 	letter-spacing: 0.02em;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 30px;
 	padding: 1rem;
 	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 28px;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		line-height: 22px;
-		font-size: 14px;
+		font-size: 16px;
 		min-width: 100px;
 	}
 `;
@@ -114,9 +114,10 @@ export const LinkList = styled.ul`
 		gap: 16px;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
+		grid-template-columns: 1fr;
 		width: 100%;
-		padding: 32px 4px 16px;
-		gap: 5px;
+		padding: 32px 20px 16px;
+		gap: 20px;
 	}
 `;
 
@@ -129,13 +130,13 @@ export const LinkColumn = styled.div`
 export const LinkTitle = styled.h4`
 	font-style: normal;
 	font-weight: 600;
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.4);
 	margin-bottom: 16px;
 	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 10px;
+		font-size: 16px;
 		line-height: 12px;
 		margin-bottom: 8px;
 	}
