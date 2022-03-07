@@ -5,7 +5,8 @@ import BgAnimation from '../components/BgAnimation';
 import Projects from '../components/Projects';
 import Technologies from '../components/Technologies';
 import TimeLine from '../components/TimeLine';
-import Achievements from '../components/Achievements';
+// import Achievements from '../components/Achievements';
+import ProjectCarousel from '../components/ProjectCarousel';
 
 export default function Home() {
 	return (
@@ -15,6 +16,7 @@ export default function Home() {
 				<BgAnimation />
 			</Section>
 			<Projects />
+			<ProjectCarousel />
 			<Technologies />
 			<TimeLine />
 			{/* <Achievements /> */}

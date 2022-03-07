@@ -85,15 +85,58 @@ export const projects = [
 	},
 	{
 		id: 3,
-		title: 'Unichat',
+		title: 'Smart-Brain',
 		description:
-			'This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application',
+			'Small face recognition project I built when getting into React. It uses Clarifai for face recognition and it stores user data via a Node.js backend to PostgreSQL database.',
 		imagesPath: 'images/project3/',
-		imagesNr: 1,
-		features: [],
-		tags: ['React', 'ChatEngine', 'Firebase'],
-		source: 'https://google.com',
-		visit: 'https://google.com',
+		imagesNr: 3,
+		features: [
+			'User registration(login) system',
+			'Node.js and Express backend',
+			'PostgreSQL database',
+			'Clarifai API for face recognition',
+		],
+		tags: ['React', 'JavaScript', 'Clarifai', 'Node.js', 'PostgreSQL'],
+		source: '',
+		visit: 'https://projects.creativedb.eu/smartbrain',
+	},
+];
+
+export const SmallProjects = [
+	{
+		title: 'Quote Generator',
+		info: 'Displays quote with category selection option',
+		link: 'https://projects.creativedb.eu/small-js/01-quote-generator/',
+	},
+	{
+		title: 'Infinite Scroll',
+		info: 'Using Unsplsh API get infinite scroll effect',
+		link: 'https://projects.creativedb.eu/small-js/02-infinite-scroll/',
+	},
+	{
+		title: 'Picture in Picture',
+		info: 'Get pip for Chrome, Edge, Opera and Safari(desktop only)',
+		link: 'https://projects.creativedb.eu/small-js/03-picture-in-picture/',
+	},
+	{
+		title: 'Joke Teller',
+		info: 'Small javascript projects that tells IT jokes.',
+		link: 'https://projects.creativedb.eu/small-js/04-joke-teller/',
+	},
+	{
+		title: 'form-sendemail',
+		info: 'The API used for Company Presentation project',
+		link: 'https://github.com/Spiider2020/form-sendmail',
+	},
+	{
+		title: 'form-sendemail',
+		info: 'The API used for Company Presentation project',
+		link: 'https://github.com/Spiider2020/form-sendmail',
+	},
+	{
+		title: 'form-sendemail',
+		info: 'The API used for Company Presentation project',
+		link: 'https://github.com/Spiider2020/form-sendmail',
 	},
 ];
 
