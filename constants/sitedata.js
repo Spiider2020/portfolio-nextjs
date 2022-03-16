@@ -15,8 +15,8 @@ export const HeaderData = {
 		},
 	],
 	github: 'https://github.com/Spiider2020',
-	linkedin: 'https://www.linkedin.com/',
-	instagram: 'https://www.instagram.com/',
+	linkedin: 'https://www.linkedin.com/in/catalin-stancalie-7b3899234/',
+	instagram: 'https://www.instagram.com/ionutcatalin87/',
 };
 
 export const HeroData = {
@@ -100,6 +100,24 @@ export const projects = [
 		source: '',
 		visit: 'https://projects.creativedb.eu/smartbrain',
 	},
+	{
+		id: 4,
+		title: 'SMS for Woo',
+		description:
+			'A Wordpress plugin that I built for www.global-voice.net, it integrates with WooCommerce to notify via SMS about order status. It uses Global Voice SMS API to notify customers whenever there is a change in their order status. You can define custom messages for every type of order status , and you can activate and deactivate them individually. [p]Reference: robert@global-voice.net',
+		imagesPath: 'images/project4/',
+		imagesNr: 4,
+		features: [
+			'WooCommerce integration',
+			'Global Voice API integration',
+			'SMS on status change',
+			'Template messages for every status type',
+			'Bulk SMS campaign for opt-ins',
+		],
+		tags: ['PHP', 'JavaScript', 'Wordpress'],
+		source: 'https://wordpress.org/plugins/sms-for-woo/',
+		visit: '',
+	},
 ];
 
 export const SmallProjects = [
@@ -122,16 +140,6 @@ export const SmallProjects = [
 		title: 'Joke Teller',
 		info: 'Small javascript projects that tells IT jokes.',
 		link: 'https://projects.creativedb.eu/small-js/04-joke-teller/',
-	},
-	{
-		title: 'form-sendemail',
-		info: 'The API used for Company Presentation project',
-		link: 'https://github.com/Spiider2020/form-sendmail',
-	},
-	{
-		title: 'form-sendemail',
-		info: 'The API used for Company Presentation project',
-		link: 'https://github.com/Spiider2020/form-sendmail',
 	},
 	{
 		title: 'form-sendemail',

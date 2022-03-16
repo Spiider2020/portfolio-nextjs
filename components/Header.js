@@ -22,7 +22,7 @@ export default function Header() {
 					? HeaderData.nav.map((item, index) => {
 							return (
 								<li key={`nav-${index}`}>
-									<Link href={item.link}>
+									<Link href={item.link} passHref>
 										<NavLink>{item.text}</NavLink>
 									</Link>
 								</li>
@@ -31,13 +31,13 @@ export default function Header() {
 					: ''}
 			</NavigationDiv>
 			<SocialDiv>
-				<SocialIcons href={HeaderData.github}>
+				<SocialIcons href={HeaderData.github} target='_blank'>
 					<AiFillGithub style={{ fontSize: '3rem' }} />
 				</SocialIcons>
-				<SocialIcons href={HeaderData.linkedin}>
+				<SocialIcons href={HeaderData.linkedin} target='_blank'>
 					<AiFillLinkedin style={{ fontSize: '3rem' }} />
 				</SocialIcons>
-				<SocialIcons href={HeaderData.instagram}>
+				<SocialIcons href={HeaderData.instagram} target='_blank'>
 					<AiFillInstagram style={{ fontSize: '3rem' }} />
 				</SocialIcons>
 			</SocialDiv>

@@ -34,13 +34,13 @@ export default function Footer() {
 					<Slogan>High quality websites</Slogan>
 				</CompanyContainer>
 				<SocialContainer>
-					<SocialIcons href={HeaderData.github}>
+					<SocialIcons href={HeaderData.github} target='_blank'>
 						<AiFillGithub style={{ fontSize: '3rem' }} />
 					</SocialIcons>
-					<SocialIcons href={HeaderData.linkedin}>
+					<SocialIcons href={HeaderData.linkedin} target='_blank'>
 						<AiFillLinkedin style={{ fontSize: '3rem' }} />
 					</SocialIcons>
-					<SocialIcons href={HeaderData.instagram}>
+					<SocialIcons href={HeaderData.instagram} target='_blank'>
 						<AiFillInstagram style={{ fontSize: '3rem' }} />
 					</SocialIcons>
 				</SocialContainer>

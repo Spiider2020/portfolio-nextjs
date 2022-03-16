@@ -29,22 +29,9 @@ export default function ProjectCarousel() {
 		return;
 	};
 
-	const updateSize = () => {
-		if (window.innerWidth < 640) {
-			setSize(cardSizes.sm);
-			setChevronSize(20);
-		} else if (window.innerWidth >= 640 && window.innerWidth < 1024) {
-			setSize(cardSizes.lg);
-			setChevronSize(24);
-		} else {
-			setSize(cardSizes.xl);
-			setChevronSize(24);
-		}
-	};
-
 	const handleWheel = (e) => {
 		let cardWidth = size.width + size.gap;
-		console.log(e);
+		// console.log(e);
 		if (e.deltaY > 0) {
 			scroll(projectCarouselRef.current, (activeItem + 1) * cardWidth);
 		} else {
@@ -96,9 +83,21 @@ export default function ProjectCarousel() {
 			div.removeEventListener('mouseenter', handleMouseEnter);
 			div.removeEventListener('mouseleave', handleMouseLeave);
 		};
-	}, []);
+	}, [allowScroll, blockScroll]);
 
 	useEffect(() => {
+		const updateSize = () => {
+			if (window.innerWidth < 640) {
+				setSize(cardSizes.sm);
+				setChevronSize(20);
+			} else if (window.innerWidth >= 640 && window.innerWidth < 1024) {
+				setSize(cardSizes.lg);
+				setChevronSize(24);
+			} else {
+				setSize(cardSizes.xl);
+				setChevronSize(24);
+			}
+		};
 		updateSize();
 		const handleResize = () => {
 			updateSize();
@@ -106,7 +105,7 @@ export default function ProjectCarousel() {
 		};
 
 		window.addEventListener('resize', handleResize);
-	}, [updateSize]);
+	}, []);
 
 	return (
 		<Section>

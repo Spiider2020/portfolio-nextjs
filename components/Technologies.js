@@ -31,7 +31,7 @@ export default function Technologies() {
 		<Section id='tech'>
 			<SectionDivider />
 			<SectionTitle main='true'>Technologies</SectionTitle>
-			<SectionText>I've worked with a range of technologies in the web development world.</SectionText>
+			<SectionText>I&apos;ve worked with a range of technologies in the web development world.</SectionText>
 			<List>
 				<ListItem>
 					<ListIconContainer>

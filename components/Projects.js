@@ -1,4 +1,6 @@
+import { route } from 'next/dist/server/router';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { projects } from '../constants/sitedata';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
@@ -18,6 +20,7 @@ import {
 } from './styled/ProjectsStyles';
 
 export default function Projects() {
+	const router = useRouter();
 	return (
 		<Section nopadding id='projects'>
 			<SectionDivider />
@@ -25,7 +28,7 @@ export default function Projects() {
 			<GridContainer>
 				{projects.map((item) => (
 					<BlogCard key={item.id}>
-						<Img src={item.imagesPath + '1.png'} />
+						<Img src={`${router.basePath}/` + item.imagesPath + '1.png'} />
 						<TitleContent>
 							<HeaderThree thetitle>{item.title}</HeaderThree>
 							<Hr />
@@ -56,7 +59,7 @@ export default function Projects() {
 							) : (
 								<></>
 							)}
-							<Link href={`/projects/${item.id}`}>
+							<Link href={`/projects/${item.id}`} passHref>
 								<ExternalLinks>More about</ExternalLinks>
 							</Link>
 						</UtilityList>
