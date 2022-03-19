@@ -60,7 +60,7 @@ export default function TimeLine() {
 			<SectionDivider />
 			<SectionTitle main='true'>About Me</SectionTitle>
 			<SectionText>
-				I started my journey into web developemnt a while back. Having a background in CS helped me accumulate
+				I started my journey into web development a while back. Having a background in CS helped me accumulate
 				skills and master a few main technologies for building professional websites.
 			</SectionText>
 			<CarouselContainer ref={carouselRef} onScroll={handleScroll}>
