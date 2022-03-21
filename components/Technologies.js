@@ -15,6 +15,7 @@ import {
 	SiAdobexd,
 	SiFigma,
 	SiDocker,
+	SiNodedotjs,
 } from 'react-icons/si';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../styles/GlobalComponents';
 import {
@@ -64,6 +65,8 @@ export default function Technologies() {
 						<ListTitle>Back-End</ListTitle>
 						<ListParagraph>
 							Experience with <br />
+							<SiNodedotjs size='14px' />
+							&nbsp; Node.js <br />
 							<DiMysql size='16px' />
 							&nbsp; MySQL <br />
 							<SiMariadb size='15px' />

@@ -21,7 +21,7 @@ export const HeaderData = {
 
 export const HeroData = {
 	name: 'Catalin Stancalie',
-	text: 'My purpose as a full stack developer is to help individuals or companies reach as many people as posible, using the latest technologies.',
+	text: 'My purpose as a full stack developer is to help individuals or companies reach as many people as possible, using the latest technologies.',
 	email: 'catalin.stancalie@creativedb.ro',
 	btnText: 'Learn More',
 };
