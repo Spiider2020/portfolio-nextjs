@@ -1,5 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import config from '../next.config';
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx) {
@@ -36,7 +37,7 @@ export default class MyDocument extends Document {
 						href='https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap'
 						rel='stylesheet'
 					/>
-					<link rel='icon' type='image/x-icon' href='./favicon.ico' />
+					<link rel='icon' type='image/x-icon' href={config.basePath + '/favicon.ico'} />
 				</Head>
 				<body>
 					<Main />
